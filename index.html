@@ -1,68 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/assets/styles/indexstyle.css">
+    <title>Orest Kisi - Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/indexstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="toggle-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+    
     <div class="portfolio-container">
-        <!-- Left side: Content area -->
         <div class="content-area">
-            <div class="content-section" id="content-1">
-                <div class="profile-image">
-                    <img src="assets/content/WhatsApp Image 2025-04-24 at 18.57.35_ac223244.jpg" alt="Profile Picture">
-                </div>
-                <h2>Orest Kisi</h2>
-                <p> I'm an IT/Web and Mobile Computing student excited about extending my internship experience. I've
- got a solid foundation in web and mobile technologies from my coursework and I'm eager to put that
- knowledge into action and dive deeper into modern technologies. I'm looking for an internship where I
- can learn, contribute to cool projects, and be part of a tech team</p>
-
-<p>I'm especially passionate about creating clean, user-focused digital experiences—whether it's a responsive website, a sleek mobile app, or a powerful backend system. My education has exposed me to full-stack development, databases, RESTful APIs, and cross-platform tools, allowing me to build well-rounded, functional applications. I enjoy tackling technical challenges and love when I can pair functionality with design to make something truly engaging.</p>
-
-<p>Beyond the code, I'm a proactive team player and quick learner. During my internship, I had the chance to collaborate with developers and product teams, which sharpened my communication and problem-solving skills. I'm always curious, constantly exploring new frameworks, tools, and trends to stay up to date in the ever-evolving tech world. I bring enthusiasm, dedication, and a strong desire to grow—qualities I hope to bring to your development team.</p>            
-
-</div>
-            <div class="content-section" id="content-2">
+            <section id="skills" class="content-section">
                 <h1 class="section-title">Skills</h1>
-                <p>Your skills information goes here...</p>
-            </div>
-            <div class="content-section" id="content-3">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code category-icon"></i>
+                            <h2>Frontend</h2>
+                        </div>
+                        <ul class="skill-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React</li>
+                            <li>Vue.js</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-server category-icon"></i>
+                            <h2>Backend</h2>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-database category-icon"></i>
+                            <h2>Database</h2>
+                        </div>
+                        <ul class="skill-list">
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-mobile-alt category-icon"></i>
+                            <h2>Mobile</h2>
+                        </div>
+                        <ul class="skill-list">
+                            <li>React Native</li>
+                            <li>Flutter</li>
+                            <li>iOS Development</li>
+                            <li>Android Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
                 <h1 class="section-title">Projects</h1>
-                <p>Your projects information goes here...</p>
-            </div>
-            <div class="content-section" id="content-4">
+                <div class="projects-wrapper">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h2>TaskMaster Pro</h2>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <p class="project-description">A comprehensive to-do list and task planning application with notification functionality and dark/light mode support.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h2>TimeTrack API</h2>
+                            <div class="project-tags">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <p class="project-description">A RESTful service built with Node.js for tracking employee timecards and managing work hours.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h2>ConnectChat</h2>
+                            <div class="project-tags">
+                                <span>Socket.io</span>
+                                <span>React</span>
+                                <span>Express</span>
+                            </div>
+                            <p class="project-description">A real-time messaging platform that enables instant communication between users.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h2>CarRental UI</h2>
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>Prototyping</span>
+                            </div>
+                            <p class="project-description">A comprehensive prototype for a car rental service application designed in Figma.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="content-section active">
+                <h1 class="section-title">About Me</h1>
+                <div class="profile-image">
+                    <img src="assets/content/WhatsApp Image 2025-04-24 at 18.57.35_ac223244.jpg" alt="Orest Kisi">
+                </div>
+                <div class="about-content">
+                    <h2 class="intro-text">Hello, I'm <span class="highlight">Orest Kisi</span></h2>
+                    <p class="subtitle">Web & Mobile Developer</p>
+                    <div class="about-description">
+                        <p>I'm a Computer Science student at RIT Croatia with a passion for creating elegant digital solutions. Currently in my third year, I specialize in web and mobile development with experience in both front-end and back-end technologies.</p>
+                        <p>As a university tutor and former IT intern, I enjoy solving complex problems and sharing knowledge with others. I'm actively seeking internship opportunities where I can contribute to meaningful projects and continue growing as a developer.</p>
+                    </div>
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <p class="degree">BS in Web and Mobile Computing</p>
+                            <p class="school">Rochester Institute of Technology Croatia</p>
+                            <p class="year">Expected Graduation: 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="content-section">
                 <h1 class="section-title">Experience</h1>
-                <p>Your experience information goes here...</p>
-            </div>
-            <div class="content-section" id="content-5">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h2>Teaching Assistant</h2>
+                                <span class="timeline-period">Sep 2023 - Present</span>
+                            </div>
+                            <p class="timeline-company">Rochester Institute of Technology Croatia</p>
+                            <ul class="timeline-details">
+                                <li>Assist professors in teaching web development courses</li>
+                                <li>Conduct weekly tutoring sessions for students</li>
+                                <li>Grade assignments and provide feedback</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h2>IT Intern</h2>
+                                <span class="timeline-period">Jun 2023 - Aug 2023</span>
+                            </div>
+                            <p class="timeline-company">Tech Solutions Inc.</p>
+                            <ul class="timeline-details">
+                                <li>Developed and maintained web applications</li>
+                                <li>Collaborated with senior developers on client projects</li>
+                                <li>Participated in code reviews and team meetings</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h2>Freelance Developer</h2>
+                                <span class="timeline-period">Jan 2022 - Present</span>
+                            </div>
+                            <p class="timeline-company">Self-employed</p>
+                            <ul class="timeline-details">
+                                <li>Design and develop websites for small businesses</li>
+                                <li>Create custom web applications for clients</li>
+                                <li>Provide ongoing maintenance and support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section">
                 <h1 class="section-title">Contact</h1>
-                <p>Your contact information goes here...</p>
-            </div>
-            <div class="footer">
-                <p>© 2025 Your Name. All rights reserved.</p>
-            </div>
+                <div class="contact-wrapper">
+                    <div class="contact-intro">
+                        <p>I'm currently looking for internship opportunities. Feel free to reach out!</p>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:orest.kisi@example.com">orest.kisi@example.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            <h3>LinkedIn</h3>
+                            <a href="#">Orest Kisi</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github contact-icon"></i>
+                            <h3>GitHub</h3>
+                            <a href="#">@orestkisi</a>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <a href="#" class="cta-button">Download Resume</a>
+                    </div>
+                </div>
+            </section>
         </div>
-        
-        <!-- Right side: Scroll snap navigation -->
-        <div class="nav-container">
-            <!-- Stationary indicator lines -->
+
+        <div id="nav-container" class="nav-container">
             <div class="selection-indicator">
                 <div class="indicator-line top"></div>
                 <div class="indicator-line bottom"></div>
             </div>
             <div class="nav-scroll-container">
-                <div class="nav-item" data-content="content-1">About Me</div>
-                <div class="nav-item" data-content="content-2">Skills</div>
-                <div class="nav-item" data-content="content-3">Projects</div>
-                <div class="nav-item" data-content="content-4">Experience</div>
-                <div class="nav-item" data-content="content-5">Contact</div>
+                <div class="nav-item">Skills</div>
+                <div class="nav-item">Projects</div>
+                <div class="nav-item active">About Me</div>
+                <div class="nav-item">Experience</div>
+                <div class="nav-item">Contact</div>
             </div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
